@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Restaurant Sellamo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Bienvenue au Cafe Dadi</h1>
+    <button id="openOrderBtn" class="btn-acheter">Afficher Commande</button>
+  </header>
+
+  <main>
+    <div class="categories" id="categories">
+      <div class="category" data-cat="cafe">☕ Café</div>
+      <div class="category" data-cat="crepe">🍫 Crêpe</div>
+      <div class="category" data-cat="jus">🥤 Jus</div>
+      <div class="category" data-cat="gazeuse">🧃 Gazeuse</div>
+      <div class="category" data-cat="chicha">💨 Chicha</div>
+    </div>
+
+    <div class="products" id="products" style="display:none;">
+      <button style="float: left; "  class="btn-retour" id="backBtn">⏪</button>
+      <div class="produits-container" id="productsList"></div>
+    </div>
+  </main>
+  <img src="img/thon" alt="">
+
+  <!-- مودال اختيار المنتج -->
+  <div id="modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h2 id="modalProductName"></h2>
+      <p id="modalProductPrice"></p>
+      <div id="modalOptions"></div>
+      <div class="modal-buttons">
+        <button id="acceptBtn">Demander</button>
+        <button id="cancelBtn">Annuler</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- مودال قائمة الطلبات -->
+  <div id="orderModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h2>Votre Commande</h2>
+      <div id="orderList"></div>
+      <div class="modal-buttons">
+
+        <button id="cancelOrderBtn">Annuler</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Cafe Dadi</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

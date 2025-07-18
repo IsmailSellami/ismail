@@ -1,0 +1,249 @@
+body {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  background: #fffaf4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: #6a2e1c;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-acheter {
+  background-color: #d2691e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn-acheter:hover {
+  background-color: #a9540e;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.category {
+  flex: 1 1 calc(45% - 20px);
+  max-width: 45%;
+  background: #f6d365;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #6a2e1c;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin:3.2%
+
+}
+
+.category:hover {
+  background: #d6993c;
+}
+
+.products {
+  padding: 20px;
+}
+
+.produits-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.produit {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 15px;
+  width: 45%;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+.produit:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+.produit img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-retour {
+  background-color: #6a2e1c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn-retour:hover {
+  background-color: #4b2010;
+}
+
+/* مودال */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: right;
+  width: 90%;
+  max-width: 350px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+
+.modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.modal-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#acceptBtn {
+  background-color: #4caf50;
+  color: white;
+}
+
+#acceptBtn:hover {
+  background-color: #388e3c;
+}
+
+#cancelBtn {
+  background-color: #f44336;
+  color: white;
+}
+
+#cancelBtn:hover {
+  background-color: #c62828;
+}
+
+#confirmOrderBtn {
+  background-color: #007bff;
+  color: white;
+}
+
+#confirmOrderBtn:hover {
+  background-color: #0056b3;
+}
+
+#cancelOrderBtn {
+  background-color: #f44336;
+  color: white;
+}
+
+#cancelOrderBtn:hover {
+  background-color: #c62828;
+}
+
+/* radio buttons inside modal */
+#modalOptions label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  direction: rtl;
+}
+
+#modalOptions input[type="radio"] {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* textarea */
+#modalNotes {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  resize: vertical;
+  direction: rtl;
+}
+/*-----------*/
+/* === Version 5: Menthe Fraîche Theme === */
+body {
+  background: #e6fff8;
+  color: #02343f;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+header {
+  background-color: #34bdb2;
+}
+
+.category {
+  background: #b2f0e9;
+  color: #02343f;
+}
+
+.category:hover {
+  background: #9de7df;
+}
+
+.produit {
+  background: #c9f9f3;
+  color: #02343f;
+}
+
+.btn-demander,
+.btn-retour {
+  background-color: #3caaa9;
+}
+
+.btn-demander:hover,
+.btn-retour:hover {
+  background-color: #318f8f;
+}
